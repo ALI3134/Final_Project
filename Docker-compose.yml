@@ -1,7 +1,9 @@
+version: '3'
 services:
   nginx:
     image: nginx:latest
     ports:
       - "8081:80" 
     volumes:
-      - . 
+      # Replace with the absolute path if necessary (especially on Windows)
+      - ./html:/usr/share/nginx/html
